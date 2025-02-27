@@ -1,0 +1,13 @@
+#employeesbasedonlocationcontainer{
+    /* width: 100%; */
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+#employeesbasedonlocationeach{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
