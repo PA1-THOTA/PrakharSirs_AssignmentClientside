@@ -42,10 +42,11 @@
     gap: 10px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   #locationpage {
     margin: auto;
     gap: 10px;
+    /* width: 80%; */
   }
   #locationpage h1 {
     background-color: rgb(207, 83, 0);
@@ -54,7 +55,7 @@
     border-radius: 10px;
     box-shadow: 2px 2px 10px 1px rgb(130, 130, 130);
     /* box-sizing: border-box; */
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     /* width: 90%; */
     font-size: 27px;
   }
