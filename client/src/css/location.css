@@ -1,12 +1,53 @@
-#locationpage{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 90%;
-    margin: auto;
-    gap:10px
+#locationpage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 10px;
 }
 
-#locationpage h1{
+#locationpage h1 {
+  background-color: rgb(207, 83, 0);
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 1px rgb(130, 130, 130);
+  /* box-sizing: border-box; */
+  padding: 10px 0px;
+}
+
+#locationpage h1:active {
+  box-shadow: 2px 2px 10px 1px rgb(2, 2, 2) inset;
+}
+
+#locationpage h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+#locationpage h1 a:hover {
+  display: inline-block;
+  /* width: 100%; */
+  color: green;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  #locationpage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #locationpage {
+    margin: auto;
+    gap: 10px;
+  }
+  #locationpage h1 {
     background-color: rgb(207, 83, 0);
     color: white;
     display: inline-block;
@@ -14,34 +55,7 @@
     box-shadow: 2px 2px 10px 1px rgb(130, 130, 130);
     /* box-sizing: border-box; */
     padding: 10px 0px;
-}
-
-#locationpage h1:active{
-    
-    box-shadow: 2px 2px 10px 1px rgb(2, 2, 2) inset;
-    
-}
-
-#locationpage h1 a{
-    color: white;
-    text-decoration: none;
-}
-
-#locationpage h1 a:hover{
-    display: inline-block;
-    /* width: 100%; */
-    color: green;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media screen and (min-width:1024px) {
-    #locationpage{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 90%;
-    margin: auto;
-    gap:10px
-}
-    
+    /* width: 90%; */
+    font-size: 27px;
+  }
 }
