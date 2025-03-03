@@ -43,15 +43,15 @@ const EmployeesStatusBasedOnLocation = () => {
           each.officelocation == location && each.workingfromname == "office"
       )
     );
-    console.log(
-      employees.filter(
-        (each) =>
-          each.officelocation == location && each.workingfromname == "office"
-      )
-    );
+    // console.log(
+    //   employees.filter(
+    //     (each) =>
+    //       each.officelocation == location && each.workingfromname == "office"
+    //   )
+    // );
   },[])
-  console.log(employeesworkingfromhome)
-  console.log(employeesworkingfromoffice)
+  // console.log(employeesworkingfromhome)
+  // console.log(employeesworkingfromoffice)
   return (
     <div>
       <h2>Location Name :- { location}</h2>

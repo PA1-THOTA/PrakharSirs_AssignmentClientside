@@ -22,7 +22,7 @@ const ProjectsPage = () => {
       projectname,
       setProjectname,
     ] = useContext(employeeContext);
-    console.log(locations)
+    // console.log(locations)
 
     
   return (

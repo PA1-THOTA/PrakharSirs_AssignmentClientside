@@ -29,8 +29,8 @@ const EmployeesStatusBasedOnProject = () => {
     setEmployeeid,
   ] = useContext(employeeContext);
   const { project } = useParams();
-  console.log(locations);
-  console.log(project);
+  // console.log(locations);
+  // console.log(project);
   useEffect(() => {
     setEmployeesworkingfromhome(
       employees.filter(
@@ -44,15 +44,15 @@ const EmployeesStatusBasedOnProject = () => {
           each.projectname == project && each.workingfromname == "office"
       )
     );
-    console.log(
-      employees.filter(
-        (each) =>
-          each.projectname == project && each.workingfromname == "office"
-      )
-    );
+    // console.log(
+    //   employees.filter(
+    //     (each) =>
+    //       each.projectname == project && each.workingfromname == "office"
+    //   )
+    // );
   }, []);
-  console.log(employeesworkingfromhome);
-  console.log(employeesworkingfromoffice);
+  // console.log(employeesworkingfromhome);
+  // console.log(employeesworkingfromoffice);
   return (
       <div>
           <h2>Project Name :- { project}</h2>

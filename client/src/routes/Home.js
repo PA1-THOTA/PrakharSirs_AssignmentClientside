@@ -54,8 +54,11 @@ const Home = () => {
       // console.log(projectnames);
       setProjects(projectnames);
       setLoading(false);
-    });
-    // .catch((error) => { setLoading(false); console.log(error)});
+    })
+      .catch((error) => {
+        setLoading(false);
+        // console.log(error)
+      });
   }, []);
   return (
     <div id="home">
@@ -70,6 +73,10 @@ const Home = () => {
           onFocus={() => {
             setSearchstate(true);
           }}
+          // onBlur={() => {
+          //   console.log("search bar blurred")
+          //   setSearchstate(false);
+          // }}
           placeholder="Search Employee Here"
         />
         {searchstate && searchterm && (
@@ -137,7 +144,7 @@ const Itemsmatchingsearchterm = ({
   setSearchstate,
   setEmployeeid,
 }) => {
-  console.log(searchterm);
+  // console.log(searchterm);
   const matchingitems = employees.filter((each) => {
     if (projectname && officelocation) {
       return (
@@ -158,7 +165,7 @@ const Itemsmatchingsearchterm = ({
     }
     return searchterm ? each.employeename.includes(searchterm) : "";
   });
-  console.log(matchingitems);
+  // console.log(matchingitems);
   return (
     <div id="searchitems">
       {matchingitems.length ? (
@@ -169,6 +176,7 @@ const Itemsmatchingsearchterm = ({
               key={index}
               style={{ color: "rgb(130, 130, 130)" }}
               onClick={() => {
+                // console.log("clicked user")
                 setSearchstate(false);
                 setEmployeeid(each._id);
               }}

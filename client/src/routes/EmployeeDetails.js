@@ -32,8 +32,8 @@ const EmployeeDetails = () => {
     const [employeedetails, setemployeedetails] = useState(
       {}
     );
-    console.log(useParams().employeeid)
-    console.log(employeeid)
+    // console.log(useParams().employeeid)
+    // console.log(employeeid)
     useEffect(() => {
         setemployeedetails(
               employees.find((each) => each._id == employeeid)
@@ -43,10 +43,10 @@ const EmployeeDetails = () => {
   return (
     <div id='employeedetails'>
       <h1 style={{textDecoration:"underline"}}>EmployeeDetails</h1>
-      <h3>Employee Name :- {employeedetails.employeename}</h3>
-      <h3>Project Name :- {employeedetails.projectname}</h3>
-      <h3>Office Location :- {employeedetails.officelocation}</h3>
-      <h3>Working From.. :- {employeedetails.workingfromname}</h3>
+      <h3>Employee Name :- {employeedetails?.employeename}</h3>
+      <h3>Project Name :- {employeedetails?.projectname}</h3>
+      <h3>Office Location :- {employeedetails?.officelocation}</h3>
+      <h3>Working From.. :- {employeedetails?.workingfromname}</h3>
     </div>
   );
 }
