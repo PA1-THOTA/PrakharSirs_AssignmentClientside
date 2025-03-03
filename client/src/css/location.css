@@ -60,3 +60,27 @@
     font-size: 27px;
   }
 }
+
+#load{
+  /* padding: 30px; */
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(255, 0, 0);
+  border-width: 6px 6px 6px 0px;
+  border-radius: 50%;
+  animation: load 1.5s ease infinite ;
+  transform: rotate(20deg);
+  display: inline-block;
+}
+
+@keyframes load {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

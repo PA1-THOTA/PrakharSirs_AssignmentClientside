@@ -44,7 +44,8 @@ const Location = () => {
         </div>
       ) : (
         <div>
-          <h1>Loading. Please wait</h1>
+            <div id="load"></div>
+            <h1>Loading. Please wait...</h1>
         </div>
       )}
     </>
