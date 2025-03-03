@@ -16,11 +16,13 @@ body {
   background-color: aqua;
   margin: 0px;
   padding: 10px;
+  box-shadow: 2px 2px 20px 4px rgba(158, 158, 158, 0.715);
 }
 
 #home1stdiv {
   position: relative;
   padding: 10px;
+  margin-top: 20px;
 }
 
 #home1stdiv input {
