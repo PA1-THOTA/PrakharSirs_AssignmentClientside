@@ -187,7 +187,12 @@ const Itemsmatchingsearchterm = ({
                   each.employeename.indexOf(searchterm)
                 )}
                 <b style={{ color: "black" }}>{searchterm}</b>
-                {each.employeename.slice(each.employeename.indexOf(searchterm))}
+                {
+                  each.employeename.slice(
+                    each.employeename.indexOf(searchterm)+searchterm.length
+                  )
+                  // each.employeename.slice(each.employeename.indexOf(searchterm))
+                }
               </p>
             </Link>
           );
